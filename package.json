@@ -1,0 +1,17 @@
+{
+  "name": "browl-restify",
+  "version": "0.0.1",
+  "description": "REST API for Browl",
+  "main": "browl.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "browl"
+  ],
+  "author": "Karl Ranna",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "restify": "~2.6.0"
+  }
+}
