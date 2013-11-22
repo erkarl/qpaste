@@ -1,17 +1,21 @@
 {
-  "name": "browl-restify",
+  "name": "qpaste",
   "version": "0.0.1",
-  "description": "REST API for Browl",
-  "main": "browl.js",
+  "description": "Quick Paste.",
+  "main": "qpaste.js",
   "scripts": {
     "test": "test"
   },
   "keywords": [
-    "browl"
+    "qpaste"
   ],
   "author": "Karl Ranna",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "devDependencies": {
-    "restify": "~2.6.0"
+    "restify": "~2.6.0",
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.6.3",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-uglify": "~0.2.2"
   }
 }
