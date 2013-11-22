@@ -8,8 +8,8 @@ var server = restify.createServer({
   name: 'qPaste'
 });
 server.pre(restify.pre.userAgentConnection());
-server.get('/hello/:name', respond);
-server.head('/hello/:name', respond);
+server.get('/hia/:name', respond);
+server.head('/hia/:name', respond);
 
 server.listen(8080, function() {
   console.log('%s listening at %s', server.name, server.url);
