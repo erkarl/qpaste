@@ -18,6 +18,7 @@
     "grunt-contrib-uglify": "~0.2.2",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-nodemon": "~0.1.2",
-    "grunt-concurrent": "~0.4.1"
+    "grunt-concurrent": "~0.4.1",
+    "riak-js": "~0.10.2"
   }
 }

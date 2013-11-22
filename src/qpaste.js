@@ -1,4 +1,6 @@
 var restify = require('restify');
+var db = require('riak-js').getClient({host: "127.0.0.1", port: "8098", debug: true});
+
 
 function respond(req, res, next) {
   res.send('hello ' + req.params.name);
