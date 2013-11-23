@@ -16,16 +16,27 @@ db.get('flights', 'KLM-5034', function(err, flight, meta) {
 */
 
 
-function respond(req, res, next) {
-  res.send('hello ' + req.params.name);
+function getSnippet(req, res, next) {
+  res.send('Snippet: ' + req.params.id);
+}
+
+function getIndex(req, res, next) {
+  res.send({
+    name: 'qPaste API',
+    version: '0.0.1'
+  });
 }
 
 var server = restify.createServer({
   name: 'qPaste'
 });
+
 server.pre(restify.pre.userAgentConnection());
-server.get('/hia/:name', respond);
-server.head('/hia/:name', respond);
+server.get('/snippet/:id', getSnippet);
+server.head('/snippet/:id', getSnippet);
+
+server.get('/', getIndex);
+server.head('/', getIndex);
 
 server.listen(8080, function() {
   console.log('%s listening at %s', server.name, server.url);
